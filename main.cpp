@@ -30,6 +30,9 @@ void printGrades(const std::vector<double>& grades) {
 }
 
 double calculateAverage(const std::vector<double>& grades) {
+    // Basic empty vector check to make sure there won't be division by zero
+    if(grades.empty()) return 0;
+
     double sum = 0;
     for(double grade : grades)
         sum += grade;
