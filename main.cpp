@@ -6,7 +6,7 @@ double calculateAverage(const std::vector<double>& grades);
 double findMax(const std::vector<double>& grades);
 
 int main() {
-    int grade = 0;
+    double grade = 0;
     std::vector<double> grades;
     do{
         std::cout << "Enter grade(0-100), -1 to stop: ";
